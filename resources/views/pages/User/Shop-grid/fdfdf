@@ -1,0 +1,14 @@
+
+  <!-- <form id="frmFilter" method="GET">
+      <input type="hidden" name="page" id="page" value="{{$page}}">
+      <input type="hidden" name="size" id="size" value="{{$size}}">
+  </form> -->
+
+    @push("scripts")
+    <!-- <script>
+          $("#pagesize").on("change", function() {
+              $('#size').val($("#pagesize option:selected").val());
+              $('#frmFilter').submit();
+          })
+      </script> -->
+    @endpush

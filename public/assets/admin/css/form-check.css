@@ -1,0 +1,150 @@
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    /* Thay thế bằng giá trị của $form-check-min-height */
+    padding-left: 1.5rem;
+    /* Thay thế bằng giá trị của $form-check-padding-start */
+    margin-bottom: 0.75rem;
+    /* Thay thế bằng giá trị của $form-check-margin-bottom */
+}
+
+.form-check .form-check-input {
+    float: left;
+    margin-left: -1.5rem;
+    /* Thay thế bằng giá trị của $form-check-padding-start * -1 */
+}
+.form-check-input {
+    width: 1.25rem;
+    /* Thay thế bằng giá trị của $form-check-input-width */
+    height: 1.25rem;
+    /* Thay thế bằng giá trị của $form-check-input-width */
+    margin-top: 0.25rem;
+    /* Thay thế bằng giá trị tính toán ($line-height-base - $form-check-input-width) * .5 */
+    vertical-align: top;
+    background-color: #fff;
+    /* Thay thế bằng giá trị của $form-check-input-bg */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #adb5bd;
+    /* Thay thế bằng giá trị của $form-check-input-border */
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    /* Thay thế bằng $form-check-transition */
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: 0.25rem;
+    /* Thay thế bằng giá trị của $form-check-input-border-radius */
+}
+
+.form-check-input[type="radio"] {
+    border-radius: 50%;
+    /* Thay thế bằng giá trị của $form-check-radio-border-radius */
+}
+
+.form-check-input:active {
+    filter: brightness(90%);
+    /* Thay thế bằng giá trị của $form-check-input-active-filter */
+}
+
+.form-check-input:focus {
+    border-color: #86b7fe;
+    /* Thay thế bằng giá trị của $form-check-input-focus-border */
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    /* Thay thế bằng giá trị của $form-check-input-focus-box-shadow */
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    /* Thay thế bằng giá trị của $form-check-input-checked-bg-color */
+    border-color: #0d6efd;
+    /* Thay thế bằng giá trị của $form-check-input-checked-border-color */
+}
+
+.form-check-input[type="checkbox"]:checked {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M10.854 3.646a.5.5 0 1 1 .707.708l-6 6a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708l2.646 2.647 5.647-5.647z'/></svg>");
+}
+
+.form-check-input[type="radio"]:checked {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0zM8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z'/></svg>");
+}
+
+.form-check-input[type="checkbox"]:indeterminate {
+    background-color: #0dcaf0;
+    /* Thay thế bằng giá trị của $form-check-input-indeterminate-bg-color */
+    border-color: #0dcaf0;
+    /* Thay thế bằng giá trị của $form-check-input-indeterminate-border-color */
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M2 7.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/></svg>");
+}
+
+.form-check-input:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.65;
+    /* Thay thế bằng giá trị của $form-check-input-disabled-opacity */
+}
+
+.form-check-input[disabled],
+.form-check-input:disabled~.form-check-label {
+    opacity: 0.65;
+    /* Thay thế bằng giá trị của $form-check-label-disabled-opacity */
+}
+.form-check-label {
+    color: #212529;
+    /* Thay thế bằng giá trị của $form-check-label-color */
+    cursor: pointer;
+    /* Thay thế bằng giá trị của $form-check-label-cursor */
+}
+
+.form-switch {
+    padding-left: 2.25rem;
+    /* Thay thế bằng giá trị của $form-switch-padding-start */
+
+    .form-check-input {
+        width: 2.5rem;
+        /* Thay thế bằng giá trị của $form-switch-width */
+        margin-left: -2.25rem;
+        /* Thay thế bằng giá trị của $form-switch-padding-start * -1 */
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M10.854 3.646a.5.5 0 1 1 .707.708l-6 6a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708l2.646 2.647 5.647-5.647z'/></svg>");
+        background-position: left center;
+        border-radius: 1.25rem;
+        /* Thay thế bằng giá trị của $form-switch-border-radius */
+        transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        /* Thay thế bằng giá trị của $form-switch-transition */
+
+        &:focus {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M10.854 3.646a.5.5 0 1 1 .707.708l-6 6a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708l2.646 2.647 5.647-5.647z'/></svg>");
+        }
+
+        &:checked {
+            background-position: right center;
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M10.854 3.646a.5.5 0 1 1 .707.708l-6 6a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708l2.646 2.647 5.647-5.647z'/></svg>");
+        }
+    }
+}
+
+.form-check-inline {
+    display: inline-block;
+    margin-right: 0.75rem;
+    /* Thay thế bằng giá trị của $form-check-inline-margin-end */
+}
+
+.btn-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+
+    &[disabled],
+    &:disabled {
+        +.btn {
+            pointer-events: none;
+            filter: none;
+            opacity: 0.65;
+            /* Thay thế bằng giá trị của $form-check-btn-check-disabled-opacity */
+        }
+    }
+}
